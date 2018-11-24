@@ -1,0 +1,25 @@
+---
+title: "Week 2 Assignment - Leaflet"
+author: "Arup Mitra"
+date: "24 November 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This map has been generated on Nov 24, 2018. The following is a map of where I live.
+
+```{r cars}
+library(leaflet)
+m <- leaflet() %>%
+        addTiles() %>%  # Add default OpenStreetMap map tiles
+        addMarkers(lng=88.357, lat=22.498, popup="My Residence - South City, Kolkata, INDIA")
+m  # Print the map
+
+
+```
+
